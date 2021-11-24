@@ -2,11 +2,6 @@ licenses(["notice"])  # Apache 2.0
 
 package(default_visibility = ["//visibility:public"])
 
-alias(
-    name = "@local_config_tf",
-    actual = "@org_tensorflow",
-)
-
 py_library(
     name = "image",
     srcs = glob(["*.py"]),
